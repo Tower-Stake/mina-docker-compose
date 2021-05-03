@@ -1,4 +1,3 @@
-m.conf
 /etc/devnet/*
 /etc/mainnet/*
 !/etc/devnet/daemon.json.example
@@ -17,3 +16,5 @@ m.conf
 !/etc/snark-stopper/config.yml.example
 /logs/*
 !/logs/.keep
+docker-compose.override.yml
+m.conf
