@@ -10,8 +10,8 @@ COMPOSE_PROFILES=mainnet,dashboard                                              
 LOG_LEVEL=Info                                                                                    # You can set: Spam|Trace|Debug|Info|Warn|Error|Faulty_peer|Fatal
 
 MINA_TAG_DEV=1.0.5-68200c7                                                                        # ## Change version tags once the software got updates
-MINA_TAG_MAIN=1.1.7-d5ff5aa-mainnet                                                                       # Ref: https://hub.docker.com/r/minaprotocol/mina-archive/tags?page=1&ordering=last_updated
-MINA_TAG_ARCH=1.1.7-d5ff5aa-mainnet                                                                       # ##
+MINA_TAG_MAIN=1.1.8-b10c0e3-mainnet                                                                       # Ref: https://hub.docker.com/r/minaprotocol/mina-archive/tags?page=1&ordering=last_updated
+MINA_TAG_ARCH=1.1.8-b10c0e3-mainnet                                                                       # ##
 
 MINA_PUBLIC_KEY=[YOUR_PUBLIC_KEY_HERE]                                                  ### SETUP YOUR MINA PUBLIC KEY
 MINA_PRIVKEY_PASS=[YOUR_PRIVATE_KEY_PASSWORD_DONT_USE_SPECIAL_CHARS]                    ### SETUP PASSWORD FOR YOUR MINA PRIVATE KEY
