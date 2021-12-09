@@ -7,10 +7,13 @@ services:
 
   mainnet:
     profiles: ["mainnet"]
-    image: minaprotocol/mina-daemon-baked:${MINA_TAG_MAIN}
+    #image: minaprotocol/mina-daemon-baked:${MINA_TAG_MAIN}
+    #image: gcr.io/o1labs-192920/mina-daemon-baked:${MINA_TAG_MAIN}
+    image: minaprotocol/mina-daemon:${MINA_TAG_MAIN}
     command: daemon ${DAEMON_OPTS_MAINNET}
     environment:
       - CODA_PRIVKEY_PASS=${MINA_PRIVKEY_PASS}
+      - UPTIME_PRIVKEY_PASS=${MINA_PRIVKEY_PASS}
       - MINA_PUBLIC_KEY=${MINA_PUBLIC_KEY}
       - SERVER_HOSTNAME=${SERVER_HOSTNAME}
       - IPV4_NETWORK=${IPV4_NETWORK:-172.25.0}
