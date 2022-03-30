@@ -24,6 +24,7 @@ services:
       - ./etc/mainnet/daemon.json:/root/.mina-config/daemon.json:ro
     ports:
       - "${MINA_BIND:-0.0.0.0}:${MINA_PORT_MAIN:-8302}:${MINA_PORT_MAIN:-8302}"
+      - "${MINA_BIND:-0.0.0.0}:3085:3085"
     restart: always
     logging:
       options:
